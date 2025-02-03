@@ -4,6 +4,9 @@
 //
 //  Created by Mingmanas Sivaraksa on 4/2/2566 BE.
 
+#include <stdlib.h>
+#include <stdio.h>
+
 #ifndef node_h
 #define node_h
 

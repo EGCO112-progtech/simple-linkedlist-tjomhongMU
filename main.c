@@ -77,14 +77,14 @@ int main(int argc, const char * argv[]) {
          //use a loop to help
 	NodePtr	h,temp;
 	int	i;
-	h = (NodePtr)malloc(sizeof(struct node));
+	h = (NodePtr)malloc(sizeof(NODE));
 	temp = h;
 	i = 0;
 	while (i < 4)
 	{
 		printf("Node %d:", i + 1);
 		scanf("%d", &(temp->value));
-		temp->next = (NodePtr)malloc(sizeof(struct node));
+		temp->next = (NodePtr)malloc(sizeof(NODE));
 		temp = temp->next;
 		i++;
 	}
