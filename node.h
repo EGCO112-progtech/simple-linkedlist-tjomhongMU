@@ -13,5 +13,7 @@ struct node
     struct node *next;
 };
 
+typedef struct node NODE;
+typedef NODE* NodePtr;
 #endif /* node_h */
 //use in case you want to include this .h file many time

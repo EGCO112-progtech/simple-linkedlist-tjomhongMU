@@ -10,6 +10,7 @@
 #include "node.h"
 
 int main(int argc, const char * argv[]) {
+/*
     int n1=5;
     struct node a,b,c,*head ;
     a.value = n1;
@@ -20,17 +21,20 @@ int main(int argc, const char * argv[]) {
     //c.value = 11; 
     c.value = head->next->value + 3; 
     c.next = 0;
+    */
  
-
+    /*
     printf("%d\n", head ->value ); //what value for 5
     printf("%d\n", head ->next->value); //what value for 8
     //printf("%d\n", (*(*head).next).value); //what value for 8
     printf("%d\n", head->next->next->value);
+    */
 /*  Exercise I
     1. Add 1 more than at the end
     2. Add value(11)
     3. Make next become NULL
  */
+    /*
     struct node f;
     f.next = &a;
     head = &f;
@@ -39,12 +43,14 @@ int main(int argc, const char * argv[]) {
     printf("%d\n", head ->next->value);
     printf("%d\n", head->next->next->value);
     printf("%d\n", head->next->next->next->value);
+    */
     
 /*  Exercise II
         1. Add 1 more than at the begining!!!!
         2. Add value (2)
         
 */
+    /*
     typedef struct node* NodePtr;
     NodePtr tmp=head; //add temp value to faciliate
         
@@ -54,21 +60,23 @@ int main(int argc, const char * argv[]) {
             printf("%3d", tmp->value);
 	    tmp = tmp->next;
         }
+	*/
     
     
-	printf("\n");
    //  Exercise IV change to while loop!! (you can use NULL to help)
        
+    /*
 	tmp = head;
          while(tmp){
             printf("%3d", tmp->value);
 	    tmp = tmp->next;
         }
+*/
     
  //  Exercise V Use malloc to create all nodes, instead of create a struct!!
          //use a loop to help
-	printf("\n");
 	NodePtr	h,temp;
+	int	i;
 	h = (NodePtr)malloc(sizeof(struct node));
 	temp = h;
 	i = 0;
@@ -87,8 +95,6 @@ int main(int argc, const char * argv[]) {
             printf("%3d", temp->value);
 	    temp = temp->next;
 	}
-          
-
     //  Exercise VI Free all node !!
          //use a loop to help
 	temp = h;
@@ -98,6 +104,5 @@ int main(int argc, const char * argv[]) {
 		h = h->next;
 		free(temp);
 	}
-          
-    return 0;
+    return (0);
 }
