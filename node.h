@@ -3,7 +3,6 @@
 //  simple linkedlist
 //
 //  Created by Mingmanas Sivaraksa on 4/2/2566 BE.
-//
 
 #ifndef node_h
 #define node_h
@@ -15,3 +14,4 @@ struct node
 };
 
 #endif /* node_h */
+//use in case you want to include this .h file many time
